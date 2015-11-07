@@ -3,6 +3,12 @@
    "remote": "CyanogenMod",
    "repository": "android_kernel_google_msm",
    "target_path": "kernel/google/msm",
-   "revision": "cm-12.1"
+   "revision": "cm-13.0"
+ },
+ {
+   "remote": "CyanogenMod",
+   "repository": "android_external_stlport",
+   "target_path": "external/stlport",
+   "revision": "cm-13.0"
  }
 ]
