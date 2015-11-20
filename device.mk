@@ -39,13 +39,6 @@ PRODUCT_PACKAGES := \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-# Live Wallpapers
-PRODUCT_PACKAGES += \
-        LiveWallpapers \
-        LiveWallpapersPicker \
-        VisualizationWallpapers \
-        librs_jni
-
 # http://b/15193147
 # TODO(danalbert): Remove this once stlport is dead and gone.
 PRODUCT_PACKAGES +=  libstlport
@@ -74,7 +67,8 @@ PRODUCT_COPY_FILES += \
 	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
 	frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
 	frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
-	device/lge/mako/media_codecs.xml:system/etc/media_codecs.xml
+	device/lge/mako/media_codecs.xml:system/etc/media_codecs.xml \
+	device/lge/mako/media_codecs_performance.xml:system/etc/media_codecs_performance.xml
 
 # Prebuilt kl and kcm keymaps
 PRODUCT_COPY_FILES += \
@@ -154,8 +148,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += persist.hwc.mdpcomp.enable=true
 
 PRODUCT_CHARACTERISTICS := nosdcard
-
-PRODUCT_TAGS += dalvik.gc.type-precise
 
 PRODUCT_PACKAGES += \
 	librs_jni \
@@ -279,16 +271,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
-
-# Hardware codecs
-PRODUCT_PROPERTY_OVERRIDES += \
-    qcom.hw.aac.encoder=true
-
-PRODUCT_PACKAGES += \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxEvrcEnc \
-    libOmxQcelp13Enc
 
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-filter=speed \
