@@ -1,8 +1,8 @@
 [
  {
    "repository": "lge-kernel-mako",
-   "target_path": "kernel/google/msm",
-   "revision": "cm-13.0"
+   "target_path": "kernel/lge/mako",
+   "revision": "android-m"
  },
  {
    "remote": "CyanogenMod",
